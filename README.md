@@ -1,18 +1,28 @@
-# ETL_in_python# ETL in Python
+# 📦 ETL in Python
 
-This repository demonstrates a simple ETL (Extract, Transform, Load) pipeline implemented in Python. It is designed to show the core principles of data extraction, transformation, and loading using standard Python libraries.
+A simple and clear example of an ETL (Extract, Transform, Load) pipeline written in Python.  
+Designed to demonstrate the core principles of data ingestion, transformation, and loading with easy-to-read code.
 
 ---
 
-## 📌 Project Structure
+## 🚀 Features
+
+- 📌 Extract data from a source
+- 🔄 Transform and clean the data
+- 💾 Load data into a target (CSV or Database)
+- 🗂️ Modular, easy-to-follow structure
+
+---
+
+## 📂 Project Structure
 
 ETL_in_python/
 │
-├── extract.py # Code for extracting data from source
-├── transform.py # Code for transforming the data
-├── load.py # Code for loading the data into target
-├── main.py # Main script to orchestrate ETL
-└── requirements.txt # Python dependencies
+├── extract.py # Extracts data from the source
+├── transform.py # Transforms and cleans data
+├── load.py # Loads data into target
+├── main.py # Orchestrates the ETL process
+└── requirements.txt # Project dependencies
 
 yaml
 Copy
@@ -20,73 +30,53 @@ Edit
 
 ---
 
-## ⚙️ Features
+## ⚙️ Requirements
 
-✅ Data Extraction from various sources  
-✅ Data Cleaning and Transformation  
-✅ Loading to target storage (CSV / Database)  
-✅ Modular and easy to understand
+- Python 3.7+
+- pandas
+- sqlalchemy
+- requests
 
----
-
-## 🚀 Quick Start
-
-1️⃣ Clone the repository
+Install all dependencies with:
 
 ```bash
+pip install -r requirements.txt
+💻 Quick Start
+Clone this repository:
+
+bash
+Copy
+Edit
 git clone https://github.com/GiorgiMegeneishvili/ETL_in_python.git
 cd ETL_in_python
-2️⃣ Install dependencies
+Install the requirements:
 
 bash
 Copy
 Edit
 pip install -r requirements.txt
-3️⃣ Run the ETL process
+Run the ETL pipeline:
 
 bash
 Copy
 Edit
 python main.py
-🧩 Requirements
-Python 3.7+
+🧩 How it Works
+✅ Extract
+Fetches raw data from a source (API, CSV, Database)
 
-pandas
+✅ Transform
+Cleans and reshapes data, handles missing values
 
-sqlalchemy
+✅ Load
+Saves processed data to CSV or Database
 
-requests
+✨ Example Use Cases
+Pulling data from public APIs
 
-All dependencies are listed in requirements.txt.
+Cleaning and formatting CSV files
 
-📚 How it works
-Extract
-
-Fetches data from a specified source (e.g. API, CSV, database)
-
-Transform
-
-Cleans and processes the data
-
-Converts formats
-
-Handles missing values
-
-Load
-
-Writes the transformed data to a target destination (e.g. database, CSV)
-
-🗂️ Example Use Case
-You can customize the extract, transform, and load scripts to work with:
-
-APIs (e.g. OpenWeatherMap, World Bank)
-
-Local CSV/Excel files
-
-SQL Databases
-
-🧑‍💻 Author
-Giorgi Megeneishvili
+Loading cleaned data into databases
 
 GitHub Profile
 
